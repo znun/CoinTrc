@@ -11,6 +11,7 @@
 		CEDD55C22AE6AEAE004E1B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD55C12AE6AEAE004E1B8F /* ContentView.swift */; };
 		CEDD55C42AE6AEB0004E1B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD55C32AE6AEB0004E1B8F /* Assets.xcassets */; };
 		CEDD55C72AE6AEB0004E1B8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD55C62AE6AEB0004E1B8F /* Preview Assets.xcassets */; };
+		CEDD55CF2AE6B57B004E1B8F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD55CE2AE6B57B004E1B8F /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CEDD55C12AE6AEAE004E1B8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEDD55C32AE6AEB0004E1B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDD55C62AE6AEB0004E1B8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEDD55CE2AE6B57B004E1B8F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		CEDD55BE2AE6AEAE004E1B8F /* CoinTrc */ = {
 			isa = PBXGroup;
 			children = (
+				CEDD55CD2AE6B54F004E1B8F /* Extentions */,
 				CEDD55BF2AE6AEAE004E1B8F /* CoinTrcApp.swift */,
 				CEDD55C12AE6AEAE004E1B8F /* ContentView.swift */,
 				CEDD55C32AE6AEB0004E1B8F /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				CEDD55C62AE6AEB0004E1B8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEDD55CD2AE6B54F004E1B8F /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD55CE2AE6B57B004E1B8F /* Color.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				CEDD55C22AE6AEAE004E1B8F /* ContentView.swift in Sources */,
 				CEDD55C02AE6AEAE004E1B8F /* CoinTrcApp.swift in Sources */,
+				CEDD55CF2AE6B57B004E1B8F /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
