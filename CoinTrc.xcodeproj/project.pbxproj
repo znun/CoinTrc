@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEC18DDB2AEA35D70092E614 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC18DDA2AEA35D70092E614 /* CoinModel.swift */; };
 		CEDD55C02AE6AEAE004E1B8F /* CoinTrcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD55BF2AE6AEAE004E1B8F /* CoinTrcApp.swift */; };
 		CEDD55C22AE6AEAE004E1B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD55C12AE6AEAE004E1B8F /* ContentView.swift */; };
 		CEDD55C42AE6AEB0004E1B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD55C32AE6AEB0004E1B8F /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEC18DDA2AEA35D70092E614 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		CEDD55BC2AE6AEAE004E1B8F /* CoinTrc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTrc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDD55BF2AE6AEAE004E1B8F /* CoinTrcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTrcApp.swift; sourceTree = "<group>"; };
 		CEDD55C12AE6AEAE004E1B8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEC18DD92AEA35A10092E614 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEC18DDA2AEA35D70092E614 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CEDD55B32AE6AEAE004E1B8F = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		CEDD55BE2AE6AEAE004E1B8F /* CoinTrc */ = {
 			isa = PBXGroup;
 			children = (
+				CEC18DD92AEA35A10092E614 /* Models */,
 				CEEA05302AE6C2E100513F1F /* Core */,
 				CEDD55CD2AE6B54F004E1B8F /* Extentions */,
 				CEDD55BF2AE6AEAE004E1B8F /* CoinTrcApp.swift */,
@@ -211,6 +222,7 @@
 				CEEA053B2AE6C7CA00513F1F /* CircleButtonView.swift in Sources */,
 				CEDD55CF2AE6B57B004E1B8F /* Color.swift in Sources */,
 				CEEA053D2AE6E13A00513F1F /* CircleButtonAnimationView.swift in Sources */,
+				CEC18DDB2AEA35D70092E614 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
