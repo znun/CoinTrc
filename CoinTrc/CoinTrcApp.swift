@@ -14,6 +14,8 @@ struct CoinTrcApp: App {
             NavigationView {
               HomeView()
                     .navigationBarHidden(false)
+                
+              
                
             }
         }
