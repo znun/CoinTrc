@@ -18,6 +18,7 @@
 		CEEA05372AE6C66F00513F1F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA05362AE6C66F00513F1F /* HomeView.swift */; };
 		CEEA053B2AE6C7CA00513F1F /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA053A2AE6C7CA00513F1F /* CircleButtonView.swift */; };
 		CEEA053D2AE6E13A00513F1F /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA053C2AE6E13A00513F1F /* CircleButtonAnimationView.swift */; };
+		CEED70182B20692100D49CFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED70172B20692100D49CFD /* HomeViewModel.swift */; };
 		CEFF975E2B203FE30097AB27 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF975D2B203FE30097AB27 /* Double.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		CEEA05362AE6C66F00513F1F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CEEA053A2AE6C7CA00513F1F /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		CEEA053C2AE6E13A00513F1F /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		CEED70172B20692100D49CFD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CEFF975D2B203FE30097AB27 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 		CEEA05332AE6C32D00513F1F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CEED70172B20692100D49CFD /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC18DDD2AEA50600092E614 /* CoinRowView.swift in Sources */,
+				CEED70182B20692100D49CFD /* HomeViewModel.swift in Sources */,
 				CEDD55C22AE6AEAE004E1B8F /* ContentView.swift in Sources */,
 				CEEA05372AE6C66F00513F1F /* HomeView.swift in Sources */,
 				CEDD55C02AE6AEAE004E1B8F /* CoinTrcApp.swift in Sources */,

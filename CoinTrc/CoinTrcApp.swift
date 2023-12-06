@@ -9,15 +9,17 @@ import SwiftUI
 
 @main
 struct CoinTrcApp: App {
+    
+    @StateObject private var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
               HomeView()
                     .navigationBarHidden(false)
                 
-              
-               
             }
+            .environmentObject(vm)
         }
     }
 }
