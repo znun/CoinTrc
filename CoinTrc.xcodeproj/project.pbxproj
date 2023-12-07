@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE6F90742B218C110032901C /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F90732B218C110032901C /* CoinDataService.swift */; };
+		CE6F907A2B21BB9D0032901C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F90792B21BB9D0032901C /* NetworkingManager.swift */; };
 		CE8B8C4F2AEBDB0F00720C86 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B8C4E2AEBDB0F00720C86 /* PreviewProvider.swift */; };
 		CEC18DDB2AEA35D70092E614 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC18DDA2AEA35D70092E614 /* CoinModel.swift */; };
 		CEC18DDD2AEA50600092E614 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC18DDC2AEA50600092E614 /* CoinRowView.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		CE6F90732B218C110032901C /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		CE6F90792B21BB9D0032901C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		CE8B8C4E2AEBDB0F00720C86 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		CEC18DDA2AEA35D70092E614 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		CEC18DDC2AEA50600092E614 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		CE6F90782B21BB780032901C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F90792B21BB9D0032901C /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CEC18DD92AEA35A10092E614 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		CEDD55BE2AE6AEAE004E1B8F /* CoinTrc */ = {
 			isa = PBXGroup;
 			children = (
+				CE6F90782B21BB780032901C /* Utilities */,
 				CE6F90722B218B910032901C /* Services */,
 				CEC18DD92AEA35A10092E614 /* Models */,
 				CEEA05302AE6C2E100513F1F /* Core */,
@@ -247,6 +258,7 @@
 				CEDD55C02AE6AEAE004E1B8F /* CoinTrcApp.swift in Sources */,
 				CEEA053B2AE6C7CA00513F1F /* CircleButtonView.swift in Sources */,
 				CEDD55CF2AE6B57B004E1B8F /* Color.swift in Sources */,
+				CE6F907A2B21BB9D0032901C /* NetworkingManager.swift in Sources */,
 				CEEA053D2AE6E13A00513F1F /* CircleButtonAnimationView.swift in Sources */,
 				CE8B8C4F2AEBDB0F00720C86 /* PreviewProvider.swift in Sources */,
 				CEFF975E2B203FE30097AB27 /* Double.swift in Sources */,
