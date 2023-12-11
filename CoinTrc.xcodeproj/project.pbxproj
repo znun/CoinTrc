@@ -13,6 +13,7 @@
 		CE85623E2B25963A00742AFA /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85623D2B25963A00742AFA /* CoinImageService.swift */; };
 		CE8562402B25B14400742AFA /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85623F2B25B14400742AFA /* CoinImageViewModel.swift */; };
 		CE8B8C4F2AEBDB0F00720C86 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B8C4E2AEBDB0F00720C86 /* PreviewProvider.swift */; };
+		CEA19FD32B26C9CF00714651 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA19FD22B26C9CF00714651 /* LocalFileManager.swift */; };
 		CEC18DDB2AEA35D70092E614 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC18DDA2AEA35D70092E614 /* CoinModel.swift */; };
 		CEC18DDD2AEA50600092E614 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC18DDC2AEA50600092E614 /* CoinRowView.swift */; };
 		CEDD55C02AE6AEAE004E1B8F /* CoinTrcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD55BF2AE6AEAE004E1B8F /* CoinTrcApp.swift */; };
@@ -34,6 +35,7 @@
 		CE85623D2B25963A00742AFA /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		CE85623F2B25B14400742AFA /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		CE8B8C4E2AEBDB0F00720C86 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		CEA19FD22B26C9CF00714651 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		CEC18DDA2AEA35D70092E614 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		CEC18DDC2AEA50600092E614 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		CEDD55BC2AE6AEAE004E1B8F /* CoinTrc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTrc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6F90792B21BB9D0032901C /* NetworkingManager.swift */,
+				CEA19FD22B26C9CF00714651 /* LocalFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				CEC18DDD2AEA50600092E614 /* CoinRowView.swift in Sources */,
 				CEED70182B20692100D49CFD /* HomeViewModel.swift in Sources */,
 				CEDD55C22AE6AEAE004E1B8F /* ContentView.swift in Sources */,
+				CEA19FD32B26C9CF00714651 /* LocalFileManager.swift in Sources */,
 				CEEA05372AE6C66F00513F1F /* HomeView.swift in Sources */,
 				CE85623C2B258E6300742AFA /* CoinImageView.swift in Sources */,
 				CEDD55C02AE6AEAE004E1B8F /* CoinTrcApp.swift in Sources */,
