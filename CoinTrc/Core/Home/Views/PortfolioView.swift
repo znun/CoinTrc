@@ -23,7 +23,7 @@ struct PortfolioView: View {
                     
                     ScrollView(.horizontal, showsIndicators: false, content: {
                         LazyHStack(spacing: 10) {
-                            ForEach(vm.allCoins) { coin in
+                            ForEach(vm.searchText.isEmpty ? vm.portfolioCoins : vm.allCoins) { coin in
                                 CoinLogoView(coin: coin)
                                     .frame(width: 75)
                                     .padding(4)
@@ -78,7 +78,7 @@ struct PortfolioView: View {
                             Image(systemName: "checkmark")
                                 .opacity(showCheckMark ? 1.0 : 0.0)
                             Button(action:{
-                                
+                                saveButtonPressed()
                             },label: {
                                 Text("save".uppercased())
                             })
@@ -100,9 +100,13 @@ struct PortfolioView: View {
     }
     
     private func saveButtonPressed() {
-        guard let coin = selectedCoin else {return}
+        guard
+            let coin = selectedCoin,
+            let amount = Double(quantityText)
+            else {return}
         
         //save to portfolio
+        vm.updatePortfolio(coin: coin, amount: amount)
         
         //show checkmark
         withAnimation(.easeIn) {
