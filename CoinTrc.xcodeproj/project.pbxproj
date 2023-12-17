@@ -36,6 +36,7 @@
 		CEEA053B2AE6C7CA00513F1F /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA053A2AE6C7CA00513F1F /* CircleButtonView.swift */; };
 		CEEA053D2AE6E13A00513F1F /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA053C2AE6E13A00513F1F /* CircleButtonAnimationView.swift */; };
 		CEED70182B20692100D49CFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED70172B20692100D49CFD /* HomeViewModel.swift */; };
+		CEEEB5E82B2ED10A005BC1F1 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEB5E72B2ED10A005BC1F1 /* HapticManager.swift */; };
 		CEFF975E2B203FE30097AB27 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF975D2B203FE30097AB27 /* Double.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		CEEA053A2AE6C7CA00513F1F /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		CEEA053C2AE6E13A00513F1F /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		CEED70172B20692100D49CFD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CEEEB5E72B2ED10A005BC1F1 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		CEFF975D2B203FE30097AB27 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 			children = (
 				CE6F90792B21BB9D0032901C /* NetworkingManager.swift */,
 				CEA19FD22B26C9CF00714651 /* LocalFileManager.swift */,
+				CEEEB5E72B2ED10A005BC1F1 /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				CE6F907A2B21BB9D0032901C /* NetworkingManager.swift in Sources */,
 				CEEA053D2AE6E13A00513F1F /* CircleButtonAnimationView.swift in Sources */,
 				CE8562402B25B14400742AFA /* CoinImageViewModel.swift in Sources */,
+				CEEEB5E82B2ED10A005BC1F1 /* HapticManager.swift in Sources */,
 				CE8B8C4F2AEBDB0F00720C86 /* PreviewProvider.swift in Sources */,
 				CEFF975E2B203FE30097AB27 /* Double.swift in Sources */,
 				CE85623E2B25963A00742AFA /* CoinImageService.swift in Sources */,
