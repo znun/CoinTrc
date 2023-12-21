@@ -37,6 +37,7 @@
 		CEEA053D2AE6E13A00513F1F /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA053C2AE6E13A00513F1F /* CircleButtonAnimationView.swift */; };
 		CEED70182B20692100D49CFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED70172B20692100D49CFD /* HomeViewModel.swift */; };
 		CEEEB5E82B2ED10A005BC1F1 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEB5E72B2ED10A005BC1F1 /* HapticManager.swift */; };
+		CEEEB5ED2B2EEC66005BC1F1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEB5EC2B2EEC66005BC1F1 /* DetailView.swift */; };
 		CEFF975E2B203FE30097AB27 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF975D2B203FE30097AB27 /* Double.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		CEEA053C2AE6E13A00513F1F /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		CEED70172B20692100D49CFD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CEEEB5E72B2ED10A005BC1F1 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		CEEEB5EC2B2EEC66005BC1F1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CEFF975D2B203FE30097AB27 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 		CEEA05302AE6C2E100513F1F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CEEEB5E92B2EE9B1005BC1F1 /* Details */,
 				CEEA05382AE6C77000513F1F /* Components */,
 				CEEA05312AE6C30100513F1F /* Home */,
 			);
@@ -234,6 +237,30 @@
 				CEEA053C2AE6E13A00513F1F /* CircleButtonAnimationView.swift */,
 			);
 			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		CEEEB5E92B2EE9B1005BC1F1 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CEEEB5EB2B2EEA54005BC1F1 /* Views */,
+				CEEEB5EA2B2EEA4A005BC1F1 /* ViewModels */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		CEEEB5EA2B2EEA4A005BC1F1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEEEB5EB2B2EEA54005BC1F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEEB5EC2B2EEC66005BC1F1 /* DetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +346,7 @@
 				CE85623C2B258E6300742AFA /* CoinImageView.swift in Sources */,
 				CE76610C2B2971BE00CF27D6 /* XMartButton.swift in Sources */,
 				CEDD55C02AE6AEAE004E1B8F /* CoinTrcApp.swift in Sources */,
+				CEEEB5ED2B2EEC66005BC1F1 /* DetailView.swift in Sources */,
 				CEEA053B2AE6C7CA00513F1F /* CircleButtonView.swift in Sources */,
 				CE832BFC2B277E930052896D /* HomeStatsView.swift in Sources */,
 				CE719DEB2B28CE580034BF1E /* MarketDataService.swift in Sources */,
