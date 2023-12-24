@@ -7,12 +7,29 @@
 
 import SwiftUI
 
+struct DetailLoadingView: View {
+    @Binding var coin: CoinModel?
+    
+    var body: some View {
+        if let coin = coin {
+           DetailView(coin: coin)
+        }
+    }
+
+}
+
 struct DetailView: View {
     
     let coin: CoinModel
     
+    init(coin: CoinModel) {
+        self.coin = coin
+        print("Coin name: \(coin.name)")
+    }
+    
     var body: some View {
-        Text(coin.name)
+            Text(coin.name)
+   
     }
 }
 

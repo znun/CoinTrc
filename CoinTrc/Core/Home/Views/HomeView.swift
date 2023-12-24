@@ -13,6 +13,9 @@ struct HomeView: View {
     @State private var showPortfolio: Bool = false //animate right
     @State private var showPortfolioView: Bool = false //new sheet
     
+    @State private var selectedCoin: CoinModel? = nil
+    @State private var showDetailView: Bool = false
+    
     
     var body: some View {
         ZStack {
@@ -85,30 +88,25 @@ struct HomeView: View {
                     .foregroundColor(Color.theme.secondaryText)
                     .padding(.horizontal)
                 if !showPortfolio {
-                    List {
-                        ForEach(vm.allCoins) { coin in
-                            CoinRowView(coin: coin, showHoldingsColumn: false)
-                                .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
-                        }
-                    }
-                    .listStyle(.plain)
+                   allCoinsList
                     .transition(.move(edge: .leading))
                 }
                 
                 if showPortfolio {
-                    List {
-                        ForEach(vm.portfolioCoins) { coin in
-                            CoinRowView(coin: coin, showHoldingsColumn: true)
-                                .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
-                        }
-                    }
-                    .listStyle(.plain)
+                  portfolioCoinsList
                     .transition(.move(edge: .trailing))
                 }
                 Spacer(minLength: 0)
              
             }
-        }
+        } .background(
+        
+            NavigationLink(destination: DetailLoadingView(coin: $selectedCoin),
+                           isActive: $showDetailView,
+                           label: {
+                             EmptyView()}
+            )
+        )
     }
 }
 
@@ -155,4 +153,38 @@ extension HomeView {
         }
         .padding(.horizontal)
     }
+    
+    private var allCoinsList: some View {
+        List {
+            ForEach(vm.allCoins) { coin in
+                CoinRowView(coin: coin, showHoldingsColumn: false)
+                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture { 
+                        segue(coin: coin)
+                    }
+
+            }
+        }
+        .listStyle(.plain)
+    }
+    
+    private var portfolioCoinsList: some View {
+        List {
+            ForEach(vm.portfolioCoins) { coin in
+                CoinRowView(coin: coin, showHoldingsColumn: false)
+                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
+            }
+        }
+        .listStyle(.plain)
+    }
+    
+    private func segue(coin: CoinModel) {
+        selectedCoin = coin
+        showDetailView.toggle()
+        
+    }
+
 }
