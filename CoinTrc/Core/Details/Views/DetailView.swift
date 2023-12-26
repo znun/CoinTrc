@@ -11,8 +11,10 @@ struct DetailLoadingView: View {
     @Binding var coin: CoinModel?
     
     var body: some View {
-        if let coin = coin {
-           DetailView(coin: coin)
+        ZStack{
+            if let coin = coin {
+                DetailView(coin: coin)
+            }
         }
     }
 
@@ -20,15 +22,15 @@ struct DetailLoadingView: View {
 
 struct DetailView: View {
     
-    let coin: CoinModel
+    @StateObject var vm: DetailViewModel
     
     init(coin: CoinModel) {
-        self.coin = coin
+        _vm = StateObject(wrappedValue: DetailViewModel(coin: coin))
         print("Coin name: \(coin.name)")
     }
     
     var body: some View {
-            Text(coin.name)
+            Text("Hello Coin")
    
     }
 }
